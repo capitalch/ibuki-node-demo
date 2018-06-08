@@ -42,6 +42,9 @@
   },
   "homepage": "https://github.com/capitalch/ibuki-node-demo#readme",
   "dependencies": {
+    "axios": "^0.18.0",
+    "express": "^4.16.3",
+    "minimist": "^1.2.0",
     "rxjs": "^6.2.0"
   }
 }
