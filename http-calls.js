@@ -8,7 +8,8 @@ ibuki.filterOn('get:states').subscribe(
         const obj = d.data;
         axios.get(obj.url)
             .then(result => {
-                obj.res.json(result.data.RestResponse.result);
+                const states = result.data.RestResponse.result;
+                obj.res.json(states);
             })
             .catch(err => {
                 obj.res.send(err.message);
